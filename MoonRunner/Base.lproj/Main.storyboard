@@ -19,10 +19,10 @@
             </objects>
             <point key="canvasLocation" x="-140" y="85"/>
         </scene>
-        <!--View Controller - New Run-->
+        <!--New Run View Controller - New Run-->
         <scene sceneID="onC-Dz-CTF">
             <objects>
-                <viewController title="New Run" id="yC5-7m-IYe" sceneMemberID="viewController">
+                <viewController title="New Run" id="yC5-7m-IYe" customClass="NewRunViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0SD-vs-Zu8"/>
                         <viewControllerLayoutGuide type="bottom" id="Z43-TU-Fh8"/>
@@ -67,6 +67,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="startPressed:" destination="yC5-7m-IYe" eventType="touchUpInside" id="t5s-ht-Gnn"/>
+                                </connections>
                             </button>
                             <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7N-m9-k99">
                                 <rect key="frame" x="70" y="484" width="193" height="45"/>
@@ -76,12 +79,19 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="stopPressed:" destination="yC5-7m-IYe" eventType="touchUpInside" id="pD6-js-e4z"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="nGF-id-wTB"/>
                     <connections>
+                        <outlet property="distLabel" destination="5OK-hg-Afv" id="9aj-Vh-ddl"/>
+                        <outlet property="paceLabel" destination="9sG-Z2-OXs" id="mlf-nY-vt7"/>
+                        <outlet property="promptLabel" destination="d3T-Un-mpg" id="j5q-lc-84A"/>
+                        <outlet property="timeLabel" destination="OPq-qX-whE" id="zw6-Yg-kMi"/>
                         <segue destination="Ah7-4n-0Wa" kind="push" identifier="RunDetails" id="Fsf-7z-aoh"/>
                     </connections>
                 </viewController>
@@ -89,10 +99,10 @@
             </objects>
             <point key="canvasLocation" x="643" y="78"/>
         </scene>
-        <!--View Controller - Home-->
+        <!--Home View Controller - Home-->
         <scene sceneID="FsL-w1-JHl">
             <objects>
-                <viewController title="Home" id="4Do-lZ-k9f" sceneMemberID="viewController">
+                <viewController title="Home" id="4Do-lZ-k9f" customClass="HomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jtc-ct-Hyd"/>
                         <viewControllerLayoutGuide type="bottom" id="Ohe-P8-b9m"/>
@@ -156,6 +166,9 @@
                             <mapView appearanceType="aqua" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="SVh-iP-q5P">
                                 <rect key="frame" x="0.0" y="45" width="320" height="261"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Ah7-4n-0Wa" id="Mmc-nV-frb"/>
+                                </connections>
                             </mapView>
                             <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Distance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UsC-Px-xWX">
                                 <rect key="frame" x="115" y="331" width="90" height="28"/>
@@ -189,6 +202,13 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Detail" id="cra-N8-TIN"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="Gmb-KE-aJR" id="fd7-ek-I0i"/>
+                        <outlet property="distanceLabel" destination="UsC-Px-xWX" id="DJd-Dw-FVW"/>
+                        <outlet property="mapView" destination="SVh-iP-q5P" id="JJb-ZF-cl8"/>
+                        <outlet property="paceLabel" destination="92a-DX-cAH" id="Uw5-G5-wZ5"/>
+                        <outlet property="timeLabel" destination="6w6-pS-cGR" id="6eR-YU-Mju"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lrm-kH-fPn" sceneMemberID="firstResponder"/>
             </objects>
