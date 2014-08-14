@@ -1,5 +1,5 @@
 //
-//  DetailViewController.h
+//  HomeViewController.h
 //  MoonRunner
 //
 //  Created by Wesley Matlock on 8/14/14.
@@ -8,11 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@class Run;
+@interface HomeViewController : UIViewController
 
-@interface DetailViewController : UIViewController
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
-@property (strong, nonatomic) Run *run;
 
 
 @end
