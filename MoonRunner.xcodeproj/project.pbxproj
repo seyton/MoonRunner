@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		810D4E4A19A25E9600833928 /* MulticolorPolylineSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 810D4E4919A25E9600833928 /* MulticolorPolylineSegment.m */; };
 		811A8194199D66C200AFF4B7 /* MathController.m in Sources */ = {isa = PBXBuildFile; fileRef = 811A8193199D66C200AFF4B7 /* MathController.m */; };
+		811A8196199D6CE600AFF4B7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 811A8195199D6CE600AFF4B7 /* MapKit.framework */; };
+		815045E719A297E5001779BB /* badges.txt in Resources */ = {isa = PBXBuildFile; fileRef = 815045E619A297E5001779BB /* badges.txt */; };
+		815045EA19A29A05001779BB /* Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 815045E919A29A05001779BB /* Badge.m */; };
+		815045ED19A29A96001779BB /* BadgeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 815045EC19A29A96001779BB /* BadgeController.m */; };
+		815045F019A2A23D001779BB /* BadgeEarnStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 815045EF19A2A23D001779BB /* BadgeEarnStatus.m */; };
 		81DB4FC6199D121E00502086 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81DB4FC5199D121E00502086 /* Foundation.framework */; };
 		81DB4FC8199D121E00502086 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81DB4FC7199D121E00502086 /* CoreGraphics.framework */; };
 		81DB4FCA199D121E00502086 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81DB4FC9199D121E00502086 /* UIKit.framework */; };
@@ -27,7 +33,6 @@
 		81DB4FFA199D121F00502086 /* MoonRunnerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DB4FF9199D121F00502086 /* MoonRunnerTests.m */; };
 		81DB5005199D16AB00502086 /* Run.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DB5004199D16AB00502086 /* Run.m */; };
 		81DB5008199D16AC00502086 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DB5007199D16AC00502086 /* Location.m */; };
-		81DB500B199D16EA00502086 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81DB500A199D16EA00502086 /* MapKit.framework */; };
 		81DB5064199D1BC000502086 /* MoonRunner.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81DB5063199D1BC000502086 /* MoonRunner.xcassets */; };
 		81DB5081199D1C5500502086 /* ariel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81DB5066199D1C5500502086 /* ariel.jpg */; };
 		81DB5082199D1C5500502086 /* atmosphere.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81DB5067199D1C5500502086 /* atmosphere.jpg */; };
@@ -71,8 +76,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		810D4E4819A25E9600833928 /* MulticolorPolylineSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MulticolorPolylineSegment.h; sourceTree = "<group>"; };
+		810D4E4919A25E9600833928 /* MulticolorPolylineSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MulticolorPolylineSegment.m; sourceTree = "<group>"; };
 		811A8192199D66C200AFF4B7 /* MathController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathController.h; sourceTree = "<group>"; };
 		811A8193199D66C200AFF4B7 /* MathController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathController.m; sourceTree = "<group>"; };
+		811A8195199D6CE600AFF4B7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		815045E619A297E5001779BB /* badges.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = badges.txt; sourceTree = "<group>"; };
+		815045E819A29A05001779BB /* Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Badge.h; sourceTree = "<group>"; };
+		815045E919A29A05001779BB /* Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Badge.m; sourceTree = "<group>"; };
+		815045EB19A29A96001779BB /* BadgeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeController.h; sourceTree = "<group>"; };
+		815045EC19A29A96001779BB /* BadgeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeController.m; sourceTree = "<group>"; };
+		815045EE19A2A23D001779BB /* BadgeEarnStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeEarnStatus.h; sourceTree = "<group>"; };
+		815045EF19A2A23D001779BB /* BadgeEarnStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeEarnStatus.m; sourceTree = "<group>"; };
 		81DB4FC2199D121E00502086 /* MoonRunner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoonRunner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81DB4FC5199D121E00502086 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		81DB4FC7199D121E00502086 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -98,7 +113,6 @@
 		81DB5004199D16AB00502086 /* Run.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Run.m; sourceTree = "<group>"; };
 		81DB5006199D16AC00502086 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		81DB5007199D16AC00502086 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
-		81DB500A199D16EA00502086 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		81DB5063199D1BC000502086 /* MoonRunner.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MoonRunner.xcassets; sourceTree = "<group>"; };
 		81DB5066199D1C5500502086 /* ariel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ariel.jpg; sourceTree = "<group>"; };
 		81DB5067199D1C5500502086 /* atmosphere.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atmosphere.jpg; sourceTree = "<group>"; };
@@ -138,9 +152,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				811A8196199D6CE600AFF4B7 /* MapKit.framework in Frameworks */,
 				81DB4FC8199D121E00502086 /* CoreGraphics.framework in Frameworks */,
 				81DB4FCC199D121E00502086 /* CoreData.framework in Frameworks */,
-				81DB500B199D16EA00502086 /* MapKit.framework in Frameworks */,
 				81DB4FCA199D121E00502086 /* UIKit.framework in Frameworks */,
 				81DB4FC6199D121E00502086 /* Foundation.framework in Frameworks */,
 			);
@@ -182,7 +196,7 @@
 		81DB4FC4199D121E00502086 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				81DB500A199D16EA00502086 /* MapKit.framework */,
+				811A8195199D6CE600AFF4B7 /* MapKit.framework */,
 				81DB4FC5199D121E00502086 /* Foundation.framework */,
 				81DB4FC7199D121E00502086 /* CoreGraphics.framework */,
 				81DB4FC9199D121E00502086 /* UIKit.framework */,
@@ -195,20 +209,28 @@
 		81DB4FCD199D121E00502086 /* MoonRunner */ = {
 			isa = PBXGroup;
 			children = (
-				81DB509D199D232000502086 /* HomeViewController.h */,
-				81DB509E199D232000502086 /* HomeViewController.m */,
-				81DB509C199D1C6800502086 /* Resources */,
 				81DB4FD6199D121E00502086 /* AppDelegate.h */,
 				81DB4FD7199D121E00502086 /* AppDelegate.m */,
-				81DB50A0199D24A100502086 /* NewRunViewController.h */,
-				811A8192199D66C200AFF4B7 /* MathController.h */,
-				811A8193199D66C200AFF4B7 /* MathController.m */,
-				81DB50A1199D24A100502086 /* NewRunViewController.m */,
-				81DB4FD9199D121E00502086 /* Main.storyboard */,
 				81DB4FE2199D121E00502086 /* DetailViewController.h */,
 				81DB4FE3199D121E00502086 /* DetailViewController.m */,
-				81DB4FDC199D121E00502086 /* MoonRunner.xcdatamodeld */,
+				81DB509D199D232000502086 /* HomeViewController.h */,
+				81DB509E199D232000502086 /* HomeViewController.m */,
+				81DB4FD9199D121E00502086 /* Main.storyboard */,
+				811A8192199D66C200AFF4B7 /* MathController.h */,
+				815045E819A29A05001779BB /* Badge.h */,
+				815045E919A29A05001779BB /* Badge.m */,
+				815045EB19A29A96001779BB /* BadgeController.h */,
+				815045EC19A29A96001779BB /* BadgeController.m */,
+				815045EE19A2A23D001779BB /* BadgeEarnStatus.h */,
+				815045EF19A2A23D001779BB /* BadgeEarnStatus.m */,
+				811A8193199D66C200AFF4B7 /* MathController.m */,
 				81DB5009199D16BD00502086 /* Model */,
+				81DB4FDC199D121E00502086 /* MoonRunner.xcdatamodeld */,
+				810D4E4819A25E9600833928 /* MulticolorPolylineSegment.h */,
+				810D4E4919A25E9600833928 /* MulticolorPolylineSegment.m */,
+				81DB50A0199D24A100502086 /* NewRunViewController.h */,
+				81DB50A1199D24A100502086 /* NewRunViewController.m */,
+				81DB509C199D1C6800502086 /* Resources */,
 				81DB4FCE199D121E00502086 /* Supporting Files */,
 			);
 			path = MoonRunner;
@@ -292,6 +314,7 @@
 		81DB509C199D1C6800502086 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				815045E619A297E5001779BB /* badges.txt */,
 				81DB4FE5199D121E00502086 /* Images.xcassets */,
 				81DB5065199D1C5500502086 /* Images */,
 				81DB5063199D1BC000502086 /* MoonRunner.xcassets */,
@@ -348,8 +371,11 @@
 				TargetAttributes = {
 					81DB4FC1199D121E00502086 = {
 						SystemCapabilities = {
-							com.apple.iOS = {
+							com.apple.BackgroundModes = {
 								enabled = 1;
+							};
+							com.apple.iOS = {
+								enabled = 0;
 							};
 						};
 					};
@@ -412,6 +438,7 @@
 				81DB5094199D1C5500502086 /* pluto.jpg in Resources */,
 				81DB5064199D1BC000502086 /* MoonRunner.xcassets in Resources */,
 				81DB5085199D1C5500502086 /* deimos.jpg in Resources */,
+				815045E719A297E5001779BB /* badges.txt in Resources */,
 				81DB4FDB199D121E00502086 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,8 +461,12 @@
 				81DB4FE4199D121E00502086 /* DetailViewController.m in Sources */,
 				81DB5008199D16AC00502086 /* Location.m in Sources */,
 				811A8194199D66C200AFF4B7 /* MathController.m in Sources */,
+				810D4E4A19A25E9600833928 /* MulticolorPolylineSegment.m in Sources */,
 				81DB4FD8199D121E00502086 /* AppDelegate.m in Sources */,
+				815045F019A2A23D001779BB /* BadgeEarnStatus.m in Sources */,
+				815045EA19A29A05001779BB /* Badge.m in Sources */,
 				81DB5005199D16AB00502086 /* Run.m in Sources */,
+				815045ED19A29A96001779BB /* BadgeController.m in Sources */,
 				81DB4FDE199D121E00502086 /* MoonRunner.xcdatamodeld in Sources */,
 				81DB509F199D232000502086 /* HomeViewController.m in Sources */,
 				81DB4FD4199D121E00502086 /* main.m in Sources */,
