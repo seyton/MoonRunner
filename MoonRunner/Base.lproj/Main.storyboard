@@ -109,16 +109,16 @@
             </objects>
             <point key="canvasLocation" x="643" y="78"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Badges Table View Controller-->
         <scene sceneID="ZJ3-yz-8q2">
             <objects>
-                <tableViewController id="J8L-fC-pWW" sceneMemberID="viewController">
+                <tableViewController id="J8L-fC-pWW" customClass="BadgesTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="71" sectionHeaderHeight="22" sectionFooterHeight="22" id="nRa-ZH-FPr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BadgeCell" rowHeight="71" id="sNY-w7-r4W">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BadgeCell" rowHeight="71" id="sNY-w7-r4W" customClass="BadgeCell">
                                 <rect key="frame" x="0.0" y="22" width="320" height="71"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sNY-w7-r4W" id="evr-Xp-HAk">
@@ -155,6 +155,11 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
+                                    <outlet property="badgeImageView" destination="uXS-Br-bW7" id="nRq-5B-jTA"/>
+                                    <outlet property="descLabel" destination="gSZ-xq-y7H" id="xlz-yJ-YiS"/>
+                                    <outlet property="goldImageView" destination="7Ax-R1-y1L" id="d2U-4p-IkE"/>
+                                    <outlet property="nameLabel" destination="nwV-aH-cQT" id="qwX-pd-Fhg"/>
+                                    <outlet property="silverImageView" destination="RDD-T0-Ggo" id="PqE-kB-0Wu"/>
                                     <segue destination="xON-0J-qWg" kind="push" id="vOZ-HF-Gn6"/>
                                 </connections>
                             </tableViewCell>

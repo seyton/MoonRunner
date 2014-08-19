@@ -10,7 +10,8 @@
 #import "Run.h"
 #import "Badge.h"
 
-
 @implementation BadgeEarnStatus
+
+
 
 @end

@@ -8,6 +8,11 @@
 
 #import "BadgeController.h"
 #import "Badge.h"
+#import "BadgeEarnStatus.h"
+#import "Run.h"
+
+float const silverMultiplier = 1.05;    //5%  speed increase
+float const goldMultiplier = 1.1;       //10% speed increase
 
 @interface BadgeController ()
 
@@ -67,6 +72,63 @@
     
 }
 
+
+- (NSArray *)earnStatusesForRuns:(NSArray *)runs {
+    
+    NSMutableArray *earnedStatuses = [NSMutableArray array];
+    
+    
+    for ( Badge *badge in self.badges) {
+        
+        BadgeEarnStatus *earnStatus = [BadgeEarnStatus new];
+        earnStatus.badge = badge;
+        
+        for (Run *run in runs) {
+            
+            
+            if (run.distance.floatValue > badge.distance) {
+                
+                // 1st time earned
+                if (!earnStatus.earnRun) {
+                    earnStatus.earnRun = run;
+                }
+                
+                
+                double earnRunSpeed = earnStatus.earnRun.distance.doubleValue / earnStatus.earnRun.duration.doubleValue;
+                double runSpeed = run.distance.doubleValue / run.duration.doubleValue;
+                
+                
+                //Silver?
+                if (!earnStatus.silverRun && runSpeed > earnRunSpeed * silverMultiplier) {
+                    earnStatus.silverRun = run;
+                }
+                
+                //Gold?
+                if (!earnStatus.goldRun && runSpeed > earnRunSpeed * goldMultiplier) {
+                    earnStatus.goldRun = run;
+                }
+                
+                
+                //Best?
+                if (!earnStatus.bestRun) {
+                    earnStatus.bestRun = run;
+                }
+                else {
+                    double bestRunSpeed = earnStatus.bestRun.distance.doubleValue / earnStatus.bestRun.duration.doubleValue;
+                    
+                    if (runSpeed > bestRunSpeed) {
+                        earnStatus.bestRun = run;
+                    }
+                }
+            }
+        }
+        
+        [earnedStatuses addObject:earnStatus];
+    }
+    
+    
+    return earnedStatuses;
+}
 
 
 

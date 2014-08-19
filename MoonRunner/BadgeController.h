@@ -8,9 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+extern float const silverMultiplier;
+extern float const goldMutiplier;
+
+
 @interface BadgeController : NSObject
 
 + (BadgeController *)defaultController;
 
+
+- (NSArray *)earnStatusesForRuns:(NSArray *)runArray;
 
 @end
